@@ -1,0 +1,46 @@
+PUT /recipes
+{
+  "settings": {
+    "index": {
+      "knn": true
+    }
+  },
+  "mappings": {
+    "properties": {
+      "Id": {
+        "type": "keyword"
+      },
+      "DatePublished": {
+        "type": "date"
+      },
+      "Name": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword"
+          }
+        }
+      },
+      "AuthorName": {
+        "type": "keyword"
+      },
+      "TotalTime": {
+        "type": "integer"
+      },
+      "Ingredients": {
+        "type": "text"
+      },
+      "RecipeCategory": {
+        "type": "keyword"
+      },
+      "RecipeInstructions": {
+        "type": "text"
+      },
+      "embedding": {
+        "type": "knn_vector",
+        "dimension": 1024
+      }
+    }
+  }
+}
+  

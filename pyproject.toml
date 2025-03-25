@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "opensearch-rag-tutorial"
+package-mode = false
+version = "0.1.0"
+description = ""
+authors = ["lizozom <lizka.k@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.1"
+kagglehub = "^0.3.7"
+kaggle = "^1.6.17"
+pandas = "^2.2.3"
+cohere = "^5.13.11"
+opensearch-py = "^2.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
