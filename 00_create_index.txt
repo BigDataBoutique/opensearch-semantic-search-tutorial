@@ -24,7 +24,10 @@ PUT /recipes
       "AuthorName": {
         "type": "keyword"
       },
-      "TotalTime": {
+      "CookTime": {
+        "type": "integer"
+      },
+      "PrepTime": {
         "type": "integer"
       },
       "Ingredients": {
